@@ -28,6 +28,17 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-box {
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+}
 
 /* image de Section */
 section {
@@ -156,7 +167,7 @@ span {
   background: var(--second-bg-color);
 }
 .A-Propos-img img {
-  width: 35vw;
+  width: 26vw;
 }
 .A-Propos {
   text-align: center;
@@ -196,4 +207,113 @@ span {
 .services-box h3 {
   font-size: 3rem;
 }
-/* ***************************************************** */
+.services-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* ************************** Contact *************************** */
+.Contact {
+  padding: 5rem 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  font-size: 2.5rem;
+}
+
+.contact-info p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.contact-details {
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-right: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  color: var(--bg-color);
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--second-bg-color);
+  color: var(--main-color);
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--second-bg-color);
+  border: 2px solid transparent;
+  border-radius: 0.8rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+}
