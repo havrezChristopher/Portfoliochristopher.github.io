@@ -17,6 +17,17 @@
   --text-color: #fff;
   --main-color: #0ef;
 }
+/* Media queries pour mobile */
+/* @media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-box {
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+} */
 
 html {
   font-size: 62.5%;
@@ -27,17 +38,6 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
-}
-/* Media queries pour mobile */
-@media (max-width: 768px) {
-  .services-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .services-box {
-    max-width: 400px;
-    margin-bottom: 2rem;
-  }
 }
 
 /* image de Section */
@@ -95,6 +95,16 @@ header {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+}
+/* *Adaptation de limge home */
+.home-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50vh;
+  height: 50vh;
+  box-shadow: 8px 28px 140px#00eeff;
 }
 .home-content h3 {
   font-size: 3.2rem;
@@ -216,10 +226,6 @@ span {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 /* ************************** Contact *************************** */
-.Contact {
-  padding: 5rem 0;
-}
-
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -233,6 +239,8 @@ span {
 
 .contact-info h3 {
   font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--main-color);
 }
 
 .contact-info p {
@@ -262,24 +270,6 @@ span {
   gap: 1rem;
 }
 
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  background: var(--main-color);
-  border-radius: 50%;
-  color: var(--bg-color);
-  font-size: 2rem;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  background: var(--second-bg-color);
-  color: var(--main-color);
-}
-
 .contact-form {
   flex: 1;
 }
@@ -306,14 +296,4 @@ span {
 .contact-form textarea:focus {
   border-color: var(--main-color);
   outline: none;
-}
-
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .input-group {
-    flex-direction: column;
-  }
 }
