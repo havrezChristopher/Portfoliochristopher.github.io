@@ -195,7 +195,8 @@ span {
   margin: 2rem 0 3rem;
 }
 /* ************************** Services *************************** */
-.services h2 {
+.services h1 {
+  font-size: 4rem;
   margin-bottom: 5rem;
   border-radius: 2rem;
 }
@@ -226,6 +227,9 @@ span {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 /* ************************** Contact *************************** */
+.Contact h1 {
+  font-size: 4rem;
+}
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -238,9 +242,8 @@ span {
 }
 
 .contact-info h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--main-color);
 }
 
 .contact-info p {
