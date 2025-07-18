@@ -35,17 +35,32 @@
         <!--! image de presentation A RETRAVAILLER  -->
       </div>
       <div class="home-content">
-        <h3><span>Hello,</span>Moi c'est</h3>
-        <h1>Christopher</h1>
-        <h2>
-          Je suis <span>Développeur </span>Web <span>FullStack </span>Junior
-        </h2>
-        <p>
-          Objectif : vous aider à transformer vos idées en produits digitaux
-          performants. <br />
-          Disponible pour des missions freelance ou un poste à temps plein.
-        </p>
+               <!-- Animation lettre par lettre -->
+        <div class="letter" >
+                          <h3><span>Hello,</span>Moi c'est</h3>
+        </div>
+          <h1>Christopher</h1>
+          <!-- Animation Machine à écrire pure CSS -->
+        <div class="typewriter" id="typewriter">
+            <h2>Je suis <span>Développeur </span>Web & <span>Mobile</span></h2>
+        </div>
+          
+          <p>
+            Objectif : vous aider à transformer vos idées en produits digitaux
+            performants. 
+            Disponible pour des missions freelance ou un poste à temps plein.
+          </p>
 
+
+        <!-- Animation avec rebond -->
+        <div class="bounce-letter" >
+        </div>
+        <!-- Animation avec rotation -->
+        <div class="rotate-letter">
+        </div>
+        <!-- Animation avec glissement -->
+        <div class="slide-letter" >
+        </div>
         <!-- Lien des icone Réseau Sociaux -->
         <div class="social-media">
           <a href="https://github.com/havrezChristopher"
@@ -61,7 +76,19 @@
         <a href="./asset/documents/Havrez Christopher.News.pdf" class="btn"
           >Télécharger</a
         >
-        <!-- <a href="../RoadMapp/index.html" target="_blank"> Lien RoadMapp 😁</a> -->
+            <!-- Effet Matrix Background -->
+    <div class="matrix-bg" id="matrixBg">
+        <!-- Les colonnes seront générées par JavaScript pour plus de variété -->
+    </div>
+
+    <!-- Contrôles -->
+    <div class="controls">
+        <button class="control-btn" onclick="changeMatrixSpeed('slow')">Lent</button>
+        <button class="control-btn" onclick="changeMatrixSpeed('normal')">Normal</button>
+        <button class="control-btn" onclick="changeMatrixSpeed('fast')">Rapide</button>
+        <button class="control-btn" onclick="toggleMatrixMode()">Mode</button>
+    </div>
+         </div>
       </div>
     </section>
     <!-- ok teste -->
