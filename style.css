@@ -146,7 +146,26 @@ header {
   transform: rotateZ(10deg) rotateX(0deg) rotateY(-40deg);
 }
 /* effect 3D simple */
-.home-img {
+.custom-shape-divider-top-1752973720 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1752973720 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1752973720 .shape-fill {
+  fill: #ffffff;
+}
+/* .home-img {
   width: 35vw;
   border-radius: 50%;
   display: flex;
@@ -160,7 +179,7 @@ header {
   width: 50vh;
   height: 50vh;
   box-shadow: 8px 28px 140px#00eeff;
-}
+} */
 .home-aside h3 {
   font-size: 3.2rem;
   font-weight: 700;
