@@ -25,7 +25,7 @@
 // }
 // Étape 1 : Testez le premier mot
 // Déclarez une variable listeMots qui est un tableau.
-const listeMots = ["Cachalot", "Pétunia", "Serviette"];
+const listeMots = ["cachalot", "pétunia", "serviette"];
 let score = 0;
 
 // Ce tableau contient trois mots que l’utilisateur devra taper au clavier : “Cachalot”, “Pétunia” et “Serviette”.
